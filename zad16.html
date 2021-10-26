@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8">
+<title> Zadanie 16 </title>
+<script type="text/javascript">
+function okno_zamknij_zad16()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+
+<b>Cztery sposoby <u>wyprowadzania</u> danych na stronę:</b>
+<ol>
+<li>Z użyciem dokument.write() </li>
+<li>Z użyciem okienka alert() </li>
+<li>Do okienek formularza </li>
+<li>Do tabeli </li>
+</ol>
+
+<b>Co to jest funkcja? </b>
+<ol>
+<li>Jest to zbiór zgrupowanych instrukcji, które możemy uruchamiać poprzez podanie ich nazwy, </li>
+<li>Każda funkcja po wywołaniu wykonuje swój wewnętrzny kod, </li>
+<li>Funkcja może mieć argumenty, które wchodzą do wnętrza funkcji i są tam przetwarzane np. suma_kry(a, b), </li>
+<li>Może(nie zawsze) zwrócić obliczoną wartość zapisaną po słowie kluczowym return. </li>
+</ol>
+
+
+<b><u>Wybrane metody obiektu document</b></u>
+<table border = "1px">
+  <tr>
+    <th>Metoda</th>
+    <th>Opis</th>
+  </tr>
+  <tr>
+    <td>getElementById(„id”)</td>
+    <td>Dostęp do wszystkich elementów o konkretnej wartości atrybutu id</td>
+  </tr>
+ <tr>
+    <td>getElementByTagName(„znacznik”))</td>
+    <td>Dostęp do wszystkich elementów o typie znacznika, np. P lub DIV</td>
+  </tr>
+ <tr>
+    <td>getElementByName(„nazwa”)</td>
+    <td>Dostęp do wszystkich elementów o konkretnej wartości atrybutu</td>
+  </tr>    
+</table>
+
+<br></br>
+
+<b><u>Właściwości tak pobranego elementu to:</b></u>
+<ul>
+<li><b>innerHTML</b> – umożliwia określenie kodu HTML który zostanie umieszczony w elemencie np. w tabeli,</li>
+<li><b>innerText</b> – umożliwia określenie ciągu znaków który zostanie umieszczony w elemencie,</li>
+<li><b>className</b> – umożliwia określenie klasy CSS użytej do prezentacji elementu.</li>
+</ul>
+<br></br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_zad16()"/>
+</body>
+</html>
