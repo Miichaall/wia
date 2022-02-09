@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 75</title>
+    <script language="JavaScript">
+        
+        var liczba_1=prompt("R= ", "");
+        var R=parseFloat(liczba_1);
+        var liczbnik_jaj=0;
+
+        for(var i=-Math.round(R)-1; i<=Math.round(R)+1; i++){
+            for(var j=-R; j<=R; j++){
+                d=Math.sqrt(i*i+j*j);
+                document.write("d= "+d+"<br>");
+                document.write("("+i+" , "+j+")"+"  "); 
+                if(d<=R){liczbnik_jaj++}
+            }
+            document.write("<br>");
+        }
+        Document.write("licznik= "+liczbnik_jaj+"<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ function klient(Podzial_B,Kolor_B,Rok_B)//początek konstruktora
+{
+this.Podzial=Podzial_B;
+this.Kolor=Kolor_B;
+this.Rok=Rok_B;
+}//koniec konstruktora
+ klient.prototype.pociag = function () //definicja metody
+ {
+ alert(this.Podzial + ' ' + this.Kolor+ ' ' + this.Rok);
+ };
+var osoba1 = new klient("Towarowy ", "Szary ", "2007 "); // nowy obiekt osoba1
+var osoba2 = new klient('Służbowy ', 'Zielony ', '2020');
+osoba1.pociag(); // uruchomienie metody samochod() dotyczącej osoby 1
+osoba2.pociag();
+ document.write("oto klienci"+"<br>");
+// poniżej dostęp do pól osoby1
+ document.write("klient pierwszy"+" "+osoba1.Podzial+" "+osoba1.Kolor+" "+osoba1.Rok +"<br>");
+ document.write("klient drugi"+" "+osoba2.Podzial+" "+osoba2.Kolor+" "+osoba2.Rok);
+
+ </script>
+ </head>
+<body>
+</body>
+</html>
