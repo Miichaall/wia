@@ -1,0 +1,46 @@
+<html>
+<head>
+<script type="text/javascript">
+	function dzienTygodnia()
+	{
+		let dzisiaj = new Date()
+		let dzien = dzisiaj.getDay(), d_tyg = '';
+		
+		
+		switch (dzien){
+		
+			case 1:
+				d_tyg = 'Pn';
+				break
+			case 2:
+				d_tyg = 'Wt';
+				break
+			case 3:
+				d_tyg = 'Sr';
+				break
+			case 4:
+				d_tyg = 'Cz';
+				break
+			case 5:
+				d_tyg = 'Pn';
+				break
+			case 6:
+				d_tyg = 'Sob';
+				break
+			case 7:
+				d_tyg = 'Nd';
+				break
+			default:
+				d_tyg = 'Blad'
+				
+		}
+		document.getElementById("wynik").innerHTML = `dzien=${d_tyg}`
+	}
+</script>
+</head>
+<body>
+	<button onclick="dzienTygodnia()">Pokaz</button>
+	<div id="wynik"></div>
+</body>
+
+</html>
